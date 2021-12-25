@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable-v24/style_button_black60.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable-v24/style_points_green.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable/button_gamelevels.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable/button_stroke_black95_press_white.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable/button_stroke_white_press_blue.xml" value="0.3828125" />
@@ -15,10 +16,12 @@
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable/style_image_universal.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/drawable/style_points.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-large/universal.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-normal/dialogEnd.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-normal/universal.xml" value="0.275" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-small/universal.xml" value="1.5" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-xlarge/universal.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/dialog_end.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/gamelevels.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/previewdialog.xml" value="0.2743226600985222" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/universal.xml" value="0.22" />
