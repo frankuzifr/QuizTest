@@ -17,6 +17,7 @@ public class GameLevels extends AppCompatActivity {
         createBackButton();
 
         createFirstLevelButton();
+        createSecondLevelButton();
 
         Window window = getWindow();
         WindowsSettings.setWindowSettings(window);
@@ -43,6 +44,15 @@ public class GameLevels extends AppCompatActivity {
         TextView level1Button = findViewById(R.id.textView1);
         level1Button.setOnClickListener(v -> {
             Intent intent = new Intent(GameLevels.this, Level1.class);
+            startActivity(intent);
+            finish();
+        });
+    }
+
+    private void createSecondLevelButton(){
+        TextView level2Button = findViewById(R.id.textView2);
+        level2Button.setOnClickListener(v -> {
+            Intent intent = new Intent(GameLevels.this, Level2.class);
             startActivity(intent);
             finish();
         });

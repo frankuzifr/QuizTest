@@ -4,5 +4,6 @@
     <string name="back">Назад</string>
     <string name="level">Уровень:</string>
     <string name="levels1">Уровень 1</string>
+    <string name="levels2">Уровень 2</string>
     <string name="textContinue">Продолжить</string>
 </resources>

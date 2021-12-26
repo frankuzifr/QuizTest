@@ -18,12 +18,14 @@
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-large/universal.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-normal/dialogEnd.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-normal/universal.xml" value="0.275" />
+        <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-small/dialog_endtest.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-small/universal.xml" value="1.5" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout-xlarge/universal.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/dialog_end.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/gamelevels.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/previewdialog.xml" value="0.2743226600985222" />
+        <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/Quiz/app/src/main/res/layout/universal.xml" value="0.22" />
       </map>
     </option>
@@ -33,5 +35,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2743226600985222" />
+      </ProjectState>
+    </option>
   </component>
 </project>

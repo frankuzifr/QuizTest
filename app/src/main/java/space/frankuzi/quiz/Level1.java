@@ -8,7 +8,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -35,7 +34,7 @@ public class Level1 extends AppCompatActivity {
             R.id.point16, R.id.point17, R.id.point18, R.id.point19, R.id.point20
     };
 
-    private final LevelOneImages _levelOneImages = new LevelOneImages();
+    private final LevelsImages _levelsImages = new LevelsImages();
     private final Random _random = new Random();
 
     @SuppressLint("ClickableViewAccessibility")
@@ -144,8 +143,7 @@ public class Level1 extends AppCompatActivity {
         Window dialogWindow = _startDialog.getWindow();
         assert dialogWindow != null;
         dialogWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        View dialogWindowDecorView = dialogWindow.getDecorView();
-        dialogWindowDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        WindowsSettings.setWindowSettings(dialogWindow);
         _startDialog.setCancelable(false);
 
         TextView buttonClose = _startDialog.findViewById(R.id.buttonClose);
@@ -169,8 +167,7 @@ public class Level1 extends AppCompatActivity {
         assert endDialogWindow != null;
         endDialogWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         endDialogWindow.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-        View endDialogWindowDecorView = endDialogWindow.getDecorView();
-        endDialogWindowDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        WindowsSettings.setWindowSettings(endDialogWindow);
         _endDialog.setCancelable(false);
 
         TextView endDialogButtonClose = _endDialog.findViewById(R.id.buttonClose);
@@ -195,20 +192,20 @@ public class Level1 extends AppCompatActivity {
 
     private void generateNewStep(ImageView imageLeft, ImageView imageRight, Animation animation) {
         _imageLeftNumber = _random.nextInt(10);
-        imageLeft.setImageResource(_levelOneImages.images[_imageLeftNumber]);
+        imageLeft.setImageResource(_levelsImages.level1Images[_imageLeftNumber]);
         imageLeft.startAnimation(animation);
         TextView textLeft = findViewById(R.id.text_left);
-        textLeft.setText(_levelOneImages.imagesTexts[_imageLeftNumber]);
+        textLeft.setText(_levelsImages.level1ImagesTexts[_imageLeftNumber]);
 
         do {
             _imageRightNumber = _random.nextInt(10);
         }
         while (_imageRightNumber == _imageLeftNumber);
 
-        imageRight.setImageResource(_levelOneImages.images[_imageRightNumber]);
+        imageRight.setImageResource(_levelsImages.level1Images[_imageRightNumber]);
         imageRight.startAnimation(animation);
         TextView textRight = findViewById(R.id.text_right);
-        textRight.setText(_levelOneImages.imagesTexts[_imageRightNumber]);
+        textRight.setText(_levelsImages.level1ImagesTexts[_imageRightNumber]);
     }
 
     private void rightAnswer(){

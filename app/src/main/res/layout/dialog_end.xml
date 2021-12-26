@@ -1,60 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/dialogFon"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/dialogFon"
-    android:background="@drawable/previewbackground1"
     android:layout_gravity="center"
-    android:scaleType="centerCrop"
     android:layout_margin="10dp"
-    >
+    android:background="@color/lightBlue"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp"
-        android:gravity="center">
+        android:padding="20dp">
+
         <TextView
+            android:id="@+id/buttonClose"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/buttonClose"
-            android:text="X"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:background="@drawable/button_stroke_black95_press_white"
             android:layout_gravity="end"
-            />
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:gravity="center"
+            android:text="X"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="90"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
 
             <TextView
+                android:id="@+id/textDescriptionEnd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/textDescriptionEnd"
                 android:text="@string/level1End"
                 android:textColor="@color/black95"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
         </ScrollView>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
             android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_stroke_black95_press_white"
-            android:layout_weight="10"
-            android:text="@string/textContinue"
-            android:textColor="@color/black95"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:text="@string/textContinue"
             android:textAllCaps="true"
-            android:textSize="24sp"
-            android:layout_marginTop="10dp"
-            />
-        </LinearLayout>
+            android:textColor="@color/black95"
+            android:textSize="24sp" />
+    </LinearLayout>
 </LinearLayout>
