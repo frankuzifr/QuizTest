@@ -3,8 +3,10 @@ package space.frankuzi.quiz;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -16,7 +18,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 public class Level1 extends AppCompatActivity {
 
@@ -81,6 +85,7 @@ public class Level1 extends AppCompatActivity {
                 }
 
                 if (_countRightAnswers == 20){
+                    saveProgress();
                     _endDialog.show();
                 }else {
                     generateNewStep(imageLeft, imageRight, animation);
@@ -108,6 +113,7 @@ public class Level1 extends AppCompatActivity {
                 }
 
                 if (_countRightAnswers == 20){
+                    saveProgress();
                     _endDialog.show();
                 }else {
                     generateNewStep(imageLeft, imageRight, animation);
@@ -230,6 +236,16 @@ public class Level1 extends AppCompatActivity {
                 textView.setBackgroundResource(R.drawable.style_points);
                 _countRightAnswers--;
             }
+        }
+    }
+
+    private void saveProgress(){
+        SharedPreferences progress = getSharedPreferences("Level", MODE_PRIVATE);
+        final int level = progress.getInt("Level", 1);
+        if (level <= 1){
+            SharedPreferences.Editor editor = progress.edit();
+            editor.putInt("Level", 2);
+            editor.commit();
         }
     }
 }

@@ -72,7 +72,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="1"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -84,7 +84,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="2"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -96,7 +96,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="3"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -108,7 +108,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="4"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -120,7 +120,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="5"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -140,7 +140,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="6"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -152,7 +152,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="7"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -164,7 +164,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="8"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -176,7 +176,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="9"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -188,7 +188,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="10"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -208,7 +208,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="11"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -220,7 +220,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="12"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -232,7 +232,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="13"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -244,7 +244,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="14"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -256,7 +256,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="15"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -276,7 +276,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="16"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -288,7 +288,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="17"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -300,7 +300,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="18"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -312,7 +312,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="19"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -324,7 +324,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="20"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -344,7 +344,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="21"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -356,7 +356,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="22"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -368,7 +368,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="23"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -380,7 +380,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="24"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -392,7 +392,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:gravity="center"
-                            android:text="25"
+                            android:text="X"
                             android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -409,7 +409,7 @@
                             android:id="@+id/textView26"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="26"
+                            android:text="X"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:textColor="@color/white"
@@ -422,7 +422,7 @@
                             android:id="@+id/textView27"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="27"
+                            android:text="X"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:textColor="@color/white"
@@ -435,7 +435,7 @@
                             android:id="@+id/textView28"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="28"
+                            android:text="X"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:textColor="@color/white"
@@ -448,7 +448,7 @@
                             android:id="@+id/textView29"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="29"
+                            android:text="X"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:textColor="@color/white"
@@ -461,7 +461,7 @@
                             android:id="@+id/textView30"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="30"
+                            android:text="X"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_gamelevels"
                             android:textColor="@color/white"

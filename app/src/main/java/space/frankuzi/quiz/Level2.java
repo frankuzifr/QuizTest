@@ -3,6 +3,7 @@ package space.frankuzi.quiz;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -82,6 +83,7 @@ public class Level2 extends AppCompatActivity {
                 }
 
                 if (_countRightAnswers == 20){
+                    saveProgress();
                     _endDialog.show();
                 }else {
                     generateNewStep(imageLeft, imageRight, animation);
@@ -109,6 +111,7 @@ public class Level2 extends AppCompatActivity {
                 }
 
                 if (_countRightAnswers == 20){
+                    saveProgress();
                     _endDialog.show();
                 }else {
                     generateNewStep(imageLeft, imageRight, animation);
@@ -188,10 +191,6 @@ public class Level2 extends AppCompatActivity {
 
         Button endDialogButtonContinue = _endDialog.findViewById(R.id.buttonContinue);
         endDialogButtonContinue.setOnClickListener(v -> {
-            //Intent intent = new Intent(Level2.this, Level2.class);
-            //startActivity(intent);
-            //finish();
-            //_endDialog.dismiss();
             textDescription.setText("На этом пока все");
             endDialogButtonContinue.setVisibility(View.INVISIBLE);
         });
@@ -242,6 +241,16 @@ public class Level2 extends AppCompatActivity {
                 textView.setBackgroundResource(R.drawable.style_points);
                 _countRightAnswers--;
             }
+        }
+    }
+
+    private void saveProgress(){
+        SharedPreferences progress = getSharedPreferences("Level", MODE_PRIVATE);
+        final int level = progress.getInt("Level", 1);
+        if (level <= 2){
+            SharedPreferences.Editor editor = progress.edit();
+            editor.putInt("Level", 3);
+            editor.commit();
         }
     }
 }
