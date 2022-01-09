@@ -8,12 +8,23 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class GameLevels extends AppCompatActivity {
+
+    private AdView _adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamelevels);
+
+        MobileAds.initialize(this, "ca-app-pub-2851993153420910~9092853430");
+        _adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        _adView.loadAd(adRequest);
 
         createBackButton();
 

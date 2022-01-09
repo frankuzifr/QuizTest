@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -18,9 +17,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Map;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Random;
-import java.util.Set;
 
 public class Level1 extends AppCompatActivity {
 
@@ -30,6 +32,9 @@ public class Level1 extends AppCompatActivity {
     private int _imageLeftNumber;
     private int _imageRightNumber;
     private int _countRightAnswers;
+    private int _transition;
+
+    private InterstitialAd _interstitialAd;
 
     private final int[] _progress = {
             R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,
@@ -46,6 +51,29 @@ public class Level1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+        MobileAds.initialize(this, "ca-app-pub-2851993153420910~9092853430");
+        _interstitialAd = new InterstitialAd(this);
+        _interstitialAd.setAdUnitId("ca-app-pub-2851993153420910/9116070011");
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        _interstitialAd.loadAd(adRequest);
+
+        _interstitialAd.setAdListener(new AdListener(){
+            @Override
+            public void onAdClosed() {
+                switch (_transition){
+                    case 1:
+                        backToMenu();
+                        break;
+                    case 2:
+                        loadNextLevel();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
 
         TextView textLevels = findViewById(R.id.text_levels);
         textLevels.setText(R.string.levels1);
@@ -127,7 +155,12 @@ public class Level1 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        backToMenu();
+        if (_interstitialAd.isLoaded()){
+            _transition = 1;
+            _interstitialAd.show();
+        }
+        else
+            backToMenu();
     }
 
     private void backToMenu()
@@ -184,16 +217,32 @@ public class Level1 extends AppCompatActivity {
 
         Button endDialogButtonContinue = _endDialog.findViewById(R.id.buttonContinue);
         endDialogButtonContinue.setOnClickListener(v -> {
-            Intent intent = new Intent(Level1.this, Level2.class);
-            startActivity(intent);
-            finish();
-            _endDialog.dismiss();
-        });
+            if (_interstitialAd.isLoaded()){
+                _transition = 2;
+                _interstitialAd.show();
+            }
+            else {
+                loadNextLevel();
+        }});
+    }
+
+    private void loadNextLevel(){
+        Intent intent = new Intent(Level1.this, Level2.class);
+        startActivity(intent);
+        finish();
+        _endDialog.dismiss();
     }
 
     private void createBackButton(){
         Button buttonBack = findViewById(R.id.university_button_back);
-        buttonBack.setOnClickListener(v -> backToMenu());
+        buttonBack.setOnClickListener(v -> {
+            if (_interstitialAd.isLoaded()){
+                _transition = 1;
+                _interstitialAd.show();
+            }
+            else
+                backToMenu();
+        });
     }
 
     private void generateNewStep(ImageView imageLeft, ImageView imageRight, Animation animation) {

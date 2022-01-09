@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="level2text1">I</string>
+    <string name="level2text2">II</string>
+    <string name="level2text3">III</string>
+    <string name="level2text4">IV</string>
+    <string name="level2text5">V</string>
+    <string name="level2text6">VI</string>
+    <string name="level2text7">VII</string>
+    <string name="level2text8">VIII</string>
+    <string name="level2text9">IX</string>
+    <string name="level2text10">X</string>
+</resources>

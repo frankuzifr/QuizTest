@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="level1text0">Ноль</string>
-    <string name="level1text1">Один</string>
-    <string name="level1text2">Два</string>
-    <string name="level1text3">Три</string>
-    <string name="level1text4">Четыре</string>
-    <string name="level1text5">Пять</string>
-    <string name="level1text6">Шесть</string>
-    <string name="level1text7">Семь</string>
-    <string name="level1text8">Восемь</string>
-    <string name="level1text9">Девять</string>
+    <string name="level1text0">Zero</string>
+    <string name="level1text1">One</string>
+    <string name="level1text2">Two</string>
+    <string name="level1text3">Three</string>
+    <string name="level1text4">Four</string>
+    <string name="level1text5">Five</string>
+    <string name="level1text6">Six</string>
+    <string name="level1text7">Seven</string>
+    <string name="level1text8">Eight</string>
+    <string name="level1text9">Nine</string>
 </resources>

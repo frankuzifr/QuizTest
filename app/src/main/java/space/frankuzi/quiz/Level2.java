@@ -18,6 +18,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Random;
 
 public class Level2 extends AppCompatActivity {
@@ -28,6 +33,7 @@ public class Level2 extends AppCompatActivity {
     private int _imageLeftNumber;
     private int _imageRightNumber;
     private int _countRightAnswers;
+    private InterstitialAd _interstitialAd;
 
     private final int[] _progress = {
             R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,
@@ -44,6 +50,20 @@ public class Level2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+        MobileAds.initialize(this, "ca-app-pub-2851993153420910~9092853430");
+        _interstitialAd = new InterstitialAd(this);
+        _interstitialAd.setAdUnitId("ca-app-pub-2851993153420910/9116070011");
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        _interstitialAd.loadAd(adRequest);
+
+        _interstitialAd.setAdListener(new AdListener(){
+            @Override
+            public void onAdClosed() {
+                backToMenu();
+            }
+        });
 
         TextView textLevels = findViewById(R.id.text_levels);
         textLevels.setText(R.string.levels2);
@@ -125,7 +145,10 @@ public class Level2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        backToMenu();
+        if (_interstitialAd.isLoaded())
+            _interstitialAd.show();
+        else
+            backToMenu();
     }
 
     private void backToMenu()
@@ -198,7 +221,12 @@ public class Level2 extends AppCompatActivity {
 
     private void createBackButton(){
         Button buttonBack = findViewById(R.id.university_button_back);
-        buttonBack.setOnClickListener(v -> backToMenu());
+        buttonBack.setOnClickListener(v -> {
+            if (_interstitialAd.isLoaded())
+                _interstitialAd.show();
+            else
+                backToMenu();
+        });
     }
 
     private void generateNewStep(ImageView imageLeft, ImageView imageRight, Animation animation) {

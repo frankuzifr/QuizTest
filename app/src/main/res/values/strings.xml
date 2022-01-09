@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Quiz</string>
-    <string name="start">Начать</string>
-    <string name="back">Назад</string>
-    <string name="level">Уровень:</string>
-    <string name="levels1">Уровень 1</string>
-    <string name="levels2">Уровень 2</string>
-    <string name="textContinue">Продолжить</string>
+    <string name="start">Start</string>
+    <string name="back">Back</string>
+    <string name="level">Level:</string>
+    <string name="levels1">Level 1</string>
+    <string name="levels2">Level 2</string>
+    <string name="textContinue">Continue</string>
 </resources>
